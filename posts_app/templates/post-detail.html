@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %} detalhes postagens {% endblock %}
+{% block content %}
+
+    <h1> detalhes do posts: {{post.title}}</h1>
+    <p> {{post.create_at}} </p>
+
+    
+    <img src="{{post.image.url}}" width="200" alt="{{post.title}}"> <br>
+    <p> Descrição do Post: {{post.description}} </p>
+
+    <a href="{% url 'post-delete' post.id %}"> <button type="button" class="btn btn-success">deletar</button></a>
+    <a href="{% url 'post-update' post.id %}"> <button type="button" class="btn btn-success"> Atualizar </button></a>
+    
+{% endblock content %}

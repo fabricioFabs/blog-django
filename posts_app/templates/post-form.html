@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %} <button type="button" class="btn btn-success">criar/atualizar postagens </button>{% endblock %}
+{% block content %}
+
+    <form method="post"
+        action="{% if request.method == 'POST' %}{% url 'post-create' %}{% endif %}"
+        enctype="multipart/form-data">
+
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Criar</button>
+    </form>
+
+{% endblock content %}

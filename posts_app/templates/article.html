@@ -1,0 +1,28 @@
+<div id="main">
+
+    <!-- Post -->
+        <article class="post">
+            
+            <header><button type="submit"></button>
+                
+                <div class="title">
+                    <h2><a href="{{post.title}}">{{post.title}}</a></h2>
+                    <p></p>
+                </div>
+                
+                <div class="meta">
+                    <time class="published" datetime="post.create_at" >{{post.create_at|date:"d/M/Y" }} </time>
+                    <a href="#" class="author"><span class="name">Jane Doe</span><img src="{{post.image.url}}" alt="" /></a>
+                </div>
+                
+            </header>
+            
+            <div class = "post-image">
+            <a href="single.html" class="image featured"> 
+            <img src="{{post.image.url}}"  /></a>
+            <p> {{post.description}} </p>
+            </div>
+            
+        </article>
+
+</div>
