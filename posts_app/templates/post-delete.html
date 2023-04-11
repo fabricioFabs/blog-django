@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
 {% block title %} Deletar Postagens{% endblock %}
 {% block content %}
+
 <form method="post">
     {% csrf_token %}
     <p>deseja deletar esse post?</p>
     <button type="submit">Deletar</button>
 </form>
+
 {% endblock content %}

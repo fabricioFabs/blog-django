@@ -11,23 +11,24 @@
 
     <body>
         <title>{% block title %} {% endblock %}</title>
-
-		{% block header %} {% endblock %}
-		{% block article %} {% endblock %}
-        {% include '_message.html' %}
-        {% block content %}
-		{% block sidebar %}{% endblock %}
-		{% block footer %} {% endblock %}
+		{% block header %} {% endblock %} 
+		<div class="container">  
+			{% include '_message.html' %}
+			{% block content %}
+			{% block sidebar %}{% endblock %}
+		</div>
+		<div class="footer">
+			{% block footer %} {% endblock %}
+		</div>
         {% endblock %}
-
-		<!-- Scripts -->
+		
 		<script src="{% static 'assets/js/jquery.min.js' %}"></script>
 		<script src="{% static 'assets/js/browser.min.js' %}"></script>
 		<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
 		<script src="{% static 'assets/js/util.js' %}"></script>
 		<script src="{% static 'assets/js/main.js' %}"></script>
-
 	</body>
+	
 </html>
 
 

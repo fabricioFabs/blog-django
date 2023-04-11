@@ -79,6 +79,7 @@
 					$search.removeClass('visible');
 				}, 100);
 			});
+			
 
 	// Intro.
 		var $intro = $('#intro');
@@ -91,5 +92,5 @@
 			breakpoints.on('>large', function() {
 				$intro.prependTo($sidebar);
 			});
-
+			
 })(jQuery);

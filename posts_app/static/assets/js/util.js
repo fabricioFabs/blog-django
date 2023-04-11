@@ -474,6 +474,9 @@
 									break;
 
 								case 'password':
+									$(document).ready(function(){
+										$('.slider').slider();
+									  });
 									i.val(i.attr('defaultValue'));
 
 									x = i.parent().find('input[name=' + i.attr('name') + '-polyfill-field]');
@@ -585,3 +588,4 @@
 	};
 
 })(jQuery);
+
