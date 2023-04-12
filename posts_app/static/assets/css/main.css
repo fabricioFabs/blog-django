@@ -12,29 +12,53 @@ body{
 }
 
 #header{
-	background-color:#004AAD;
-	padding: 35px;
-	text-align:center; 
+	background-color:#292a2b;
+	padding: 5px;
+	text-align:left; 
 }
 
-.menu a, 
-.menu a:visited{
-	color:white;
-	text-decoration: none;
-	padding:8px 12px;
+.links ul li{ 
+	display:inline-block;
+	list-style:none; 
+	outline:none; 
+	padding-top: 25px;
 }
+
+.links a{
+	color:white;
+	padding:15px;
+}
+
+.links a:hover { 
+	color:#ffaa00;
+} 
  
 
-a:hover{
-	background-color:white;
-	color:#004AAD;
-} 
+a:hover h1{
+	color:#ffaa00;
+}
 
+a:hover h2{
+	color:#ffaa00;
+}
+
+a:hover h3{
+	color:#ffaa00;
+}
+ 
+a:hover{
+	color:orange;
+}
+
+a{
+	text-decoration: none; 
+}
 
 .container{ 
     width: 920px;
     margin:auto;
-    padding:40px;
+    padding:60px;
+	padding-bottom: 60px;
 }
  
 
@@ -51,13 +75,15 @@ a:hover{
 	padding:20px; 
 }
 
-h2{
-	font-size:20px;
+h2{ 
 	color:black; 
+	padding-bottom: 10px;
+	font-size: 20px;
 }
 
-h3{
+h3{ 
 	color:black; 
+	font-size: 18px;
 }
  
 .published{
@@ -77,14 +103,29 @@ h3{
     float: right; 
 	padding:20px; 
 }
- 
 
-.sidebar-heading h2{
-	background-color: #004AAD;
+.button{
+	padding:10px 30px;
 	color:white;
-	padding:5px;  
+	background-color:green;
+	border: 1px solid #555; 
+	text-align: center;
+	user-select: none;
+	cursor: pointer;
+}
+
+.button:hover{
+	background: #11ca00;
+}
+
+.sidebar-heading h3{
+	background-color: #292a2b;
+	color:white;
+	padding:10px;  
+	font-size: 20px;
 	
 }
+
 
 .item-categories{
 	padding-bottom:10px;  

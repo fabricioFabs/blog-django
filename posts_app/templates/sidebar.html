@@ -1,19 +1,20 @@
-<div class="sidebar">    
+<div class="sidebar">   
+  <a href="{% url 'post-create' %}">  
+  <div class="button">criar post</div></a></h1></a><br><br>
   <div class="sidebar-recent-posts">
     <div class="sidebar-heading">
-      <h2>Posts Recentes </h2>
+      <h3>Posts Recentes </h3>
     </div>
     {%for post in posts %}
     <div class="content"> 
-      <a href=""> 
-      <h3>{{post.title}}</h3>
+      <h3><a href="{{post.title}}"> {{post.title}}</a></h3><br>
       <span>{{post.description}}</span> 
     </div>
     {%endfor%}
   </div>  
   <div class="item-categories">
     <div class="sidebar-heading">
-      <h2>Categories</h2>
+      <h3>Categories </h3>
     </div>
     <div class="content">
       <ul>

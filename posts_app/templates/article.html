@@ -1,7 +1,7 @@
 <div class="postss">
     <div class="post"> 
-        <a href="{% url 'post-create' %}"> <button type="button" class="btn btn-success"> criar post </button></a>
-        <a href="{% url 'post-detail' post.id %}"> <button type="button" class="btn btn-success"> ver </button></button></a>
+        
+        <a href="{% url 'post-detail' post.id %}"> <button type="button" class="btn btn-success"> ver </button> </a>
             <div class="title">
                 <a href="{{post.title}}"> <h2>{{post.title}}</h2></a>
                 <p></p>
@@ -10,7 +10,7 @@
                     <time class="published" datetime="post.create_at" >{{post.create_at|date:"d/M/Y" }} </time>
                     <img src="{{post.image.url}}" width="400" alt="" /></a>
                         <div class="description">
-                            <br>Descrição<br><a href="{{post.description}}">  <h3>{{post.description}}</h3>
+                            <br>Descrição<br><h3>{{post.description}}</h3>
                             <a href="#"> leia mais...</a>
                         </div>
                 </div>  
